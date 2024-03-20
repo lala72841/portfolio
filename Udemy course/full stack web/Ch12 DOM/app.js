@@ -108,9 +108,58 @@
 // let btn = document.querySelector("button");
 // btn.style.backgroundColor = "green";
 
-let btn = document.querySelector("button");
-btn.style = "background-color:green; color:white";
-btn.addEventListener("click", () => {
-  let a = document.querySelector("a");
-  a.remove();
+// let btn = document.querySelector("button");
+// btn.style = "background-color:green; color:white";
+// btn.addEventListener("click", () => {
+//   let a = document.querySelector("a");
+//   a.remove();
+// });
+
+// let btn = document.querySelector("button");
+// btn.addEventListener("click", (e) => {
+//   console.log(e);
+// });
+
+// window.addEventListener("keydown", (e) => {
+//   console.log(e);  //keydown { target: body, key: "v", charCode: 0, keyCode: 86 }
+// });
+
+// let btn = document.querySelector("button");
+// btn.addEventListener("click", (e) => {
+//   console.log(e.target);
+// });
+
+// let myForm = document.querySelector("form");
+// myForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
+// });
+
+// a.addEventListener("click", (e) => {
+//   alert("child的事件監聽器被觸發了");
+// });
+// b.addEventListener("click", (e) => {
+//   e.stopPropagation();
+//   alert("parent的事件監聽器被觸發了");
+// });
+
+// localStorage.setItem("name", "Claire");
+// localStorage.setItem("age", "26");
+
+// let myName = localStorage.getItem("name");
+// let myAge = localStorage.getItem("age");
+// console.log(myName);
+
+// localStorage.removeItem("Liao");
+
+// localStorage.clear();
+// localStorage.setItem("myLuckyNums", [1, 2, 3, 4, 5, 6]);
+// let n = localStorage.getItem("myLuckNums");
+// console.log(typeof n);
+
+let nums = [1, 2, 3, 4, 5, 6, 7];
+localStorage.setItem("myLuckyNums", JSON.stringify(nums));
+let nums_1 = JSON.parse(localStorage.getItem("myLuckyNums"));
+console.log(typeof nums_1);
+nums_1.forEach((n) => {
+  console.log(n);
 });
