@@ -1,0 +1,92 @@
+/* element selector */
+/* h1 {
+  color: blueviolet;
+}
+h2 {
+  color: chocolate;
+} */
+
+/* ID selector */
+/* #firstParagraph {
+  color: rgb(126, 78, 199);
+} */
+
+/* class selector */
+/* .blue-text {
+  color: coral;
+}
+.large-text {
+  font-size: 32px;
+}  */
+
+/* Combine different selectors */
+/* a.large-text {
+  font-size: 32px;
+} */
+
+/* grouping selector */
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: darkslategray;
+} */
+
+/* descendant selector */
+/* div.link1 a {
+  color: darkviolet;
+}
+div.link2 a {
+  color: mediumseagreen;
+} */
+
+/* attribute selector */
+/* input[type="text"] {
+  color: palevioletred;
+} */
+/* 
+table,
+th,
+tr,
+td {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+} */
+/* 
+h1 {
+  width: 400px;
+  height: 200px;
+  background-color: darkgrey;
+
+  border: 2px dotted black;
+  padding-left: 30px;
+  margin-top: 60px;
+} */
+
+table,
+th,
+td,
+tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th:hover {
+  background-color: darkcyan;
+  font-size: large;
+}
+
+td,
+th {
+  /* 上下0.25rem、左右0.5rem */
+  padding: 0.25rem 0.5rem;
+}
+
+img:hover {
+  cursor: pointer;
+}

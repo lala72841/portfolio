@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>故宮問卷調查</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form method="GET">
+      <p>
+        <!-- 標上id，可連動label和輸入框 -->
+        <label for="名字">姓名</label>
+        <input id="名字" type="text" name="姓名" />
+
+        <!-- 多個勾選框，靠name屬性判斷是哪幾個框框間只能選一個 -->
+        <label for="性別">性別：</label>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">男性</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">女性</label>
+        <input type="radio" name="gender" id="other" value="other" />
+        <label for="other">其他</label>
+      </p>
+      <p>
+        <!-- 性別用下拉式選單 -->
+        <label for="性別">性別：</label>
+        <select name="gender" id="gender" required>
+          <option></option>
+          <option value="male">男性</option>
+          <option value="female">女性</option>
+          <option value="other">其他</option>
+        </select>
+
+        <label for="年齡">年齡：</label>
+        <input id="年齡" type="number" name="年齡" value="18" />
+
+        <label for="地區">地區：</label>
+        <input id="地區" list="area-list" type="text" />
+        <datalist id="area-list">
+          <option></option>
+          <option value="北部">北部</option>
+          <option value="中部">中部</option>
+          <option value="南部">南部</option>
+          <option value="東部">東部</option>
+        </datalist>
+      </p>
+
+      <p>
+        <label for="email">信箱：</label>
+        <input id="email" type="email" name="email" required />
+
+        <label for="password">密碼：</label>
+        <input id="password" type="password" name="password" required />
+      </p>
+
+      <p>
+        <label for="上傳檔案">檔案：</label>
+        <input id="上傳檔案" type="file" />
+
+        <input id="電子報" type="checkbox" checked name="電子報" value="訂閱" />
+        <label for="電子報">訂閱電子報</label>
+
+        <button type="submit">登入系統</button>
+        <button type="reset">重新填寫</button>
+      </p>
+      <p>
+        <label for="suggestions">給網站的建議：</label>
+        <textarea
+          name="suggestions"
+          id="suggestions"
+          cols="30"
+          rows="10"
+          placeholder="填寫給網站的建議"
+        ></textarea>
+      </p>
+      <p>Copyright &#169; 2023 Claire I. Liao</p>
+    </form>
+  </body>
+</html>
